@@ -23,3 +23,7 @@ To run unittests:
 
 To check code style:
 `$ pep8 ./`
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/PierreRambaud/color/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

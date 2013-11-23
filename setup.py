@@ -66,6 +66,8 @@ setup(
     version="0.1",
     description="Add color in your shell",
     author="Pierre Rambaud (GoT)",
+    author_email="pierre.rambaud86@gmail.com",
+    description_file="README.md",
     url="https://github.com/PierreRambaud/color",
     license="GPLv3",
     py_modules=['color'],

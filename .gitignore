@@ -1,2 +1,7 @@
 *.pyc
 .python-version
+.project
+.pydevproject
+Color-0.1
+Color.egg-info
+dist

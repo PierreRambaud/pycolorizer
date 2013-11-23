@@ -1,6 +1,8 @@
 Color
 =====
 
+[![Build Status](https://travis-ci.org/PierreRambaud/color.png?branch=master)](https://travis-ci.org/PierreRambaud/color)
+
 ## Usage
 
 ```

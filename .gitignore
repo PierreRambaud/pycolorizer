@@ -2,6 +2,6 @@
 .python-version
 .project
 .pydevproject
-Color-0.1
-Color.egg-info
+PyColorizer-0.1
+PyColorizer.egg-info
 dist

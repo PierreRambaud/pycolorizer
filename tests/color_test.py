@@ -1,6 +1,6 @@
 import unittest
 from mock import Mock
-from color import Color
+from pycolorizer import Color
 
 
 class ColorlorTest(unittest.TestCase):

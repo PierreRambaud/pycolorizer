@@ -1,12 +1,18 @@
-Color
+PyColorizer
 =====
 
-[![Build Status](https://travis-ci.org/PierreRambaud/color.png?branch=master)](https://travis-ci.org/PierreRambaud/color)
+[![Build Status](https://travis-ci.org/PierreRambaud/pycolorizer.png?branch=master)](https://travis-ci.org/PierreRambaud/pycolorizer)
+
+## Installation
+
+```
+pip install pycolorizer
+```
 
 ## Usage
 
 ```
-from color import Color
+from pycolorizer import Color
 
 c = Color()
 c.cprint("message", "red")

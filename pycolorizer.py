@@ -96,15 +96,15 @@ class Color():
         print(self.colored(message, fgcolor, bgcolor, attrs))
 
     def get_fgcolors(self):
-        return self.__dict_to_tuple__(self.fgcolors)
+        return self.__dict_to_tuple(self.fgcolors)
 
     def get_bgcolors(self):
-        return self.__dict_to_tuple__(self.bgcolors)
+        return self.__dict_to_tuple(self.bgcolors)
 
     def get_attrs(self):
-        return self.__dict_to_tuple__(self.attrs)
+        return self.__dict_to_tuple(self.attrs)
 
-    def __dict_to_tuple__(self, items):
+    def __dict_to_tuple(self, items):
         data = []
         for item in items:
             data.append(item)

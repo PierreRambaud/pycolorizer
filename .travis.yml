@@ -1,7 +1,14 @@
 language: python
+
 python:
-  - "3.2"
-  - "3.3"
-script: nosetests
+  - 3.2
+  - 3.3
+  - 3.4
+  - 3.5
 
+install:
+  - pip install -r reqs/dev.txt
 
+script:
+  - ./setup.py flake8
+  - ./setup.py nosetests

@@ -15,19 +15,26 @@ pip install pycolorizer
 from pycolorizer import Color
 
 c = Color()
-c.cprint("message", "red")
-c.cprint("message", fgcolor="red")
-c.cprint("message", "red", "green")
+print(c('Hello World!').white().bold().highlight('blue'))
+c.set_themes(
+    {
+        'welcome': ('yellow', 'bg_cyan'),
+        'bye': 'blue',
+    }
+)
+
+print(c('Hello world!').welcome().bold())
+print(c('Bye!').bye())
 ```
 
 ## Running tests
 
 In project root directory, run following command to
 install requirements for testing:
-`$ pip install -r tests_requirements.txt`
+`$ pip install -r reqs/dev.txt`
 
 To run unittests:
 `$ nosetests`
 
 To check code style:
-`$ pep8 ./`
+`$ flake8 ./`

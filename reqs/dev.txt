@@ -1,4 +1,4 @@
 nose
-mock
 coverage
 pep8
+flake8

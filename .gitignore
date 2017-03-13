@@ -1,7 +1,12 @@
+dist
+*.egg-info
+.eggs
+build/*
+!build/.keep
+.coverage
+
 *.pyc
-.python-version
+
 .project
 .pydevproject
-PyColorizer-0.1
-PyColorizer.egg-info
-dist
+.python-version

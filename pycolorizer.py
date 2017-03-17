@@ -163,14 +163,12 @@ class Color:
     def is_a_valid_style_name(self, name):
         return re.search(re.compile(self.STYLE_NAME_PATTERN), name)
 
+    def add_theme(self, name: str, styles):
+        self.__verify_themes__({name: styles})
+        self.themes[name] = styles
+
     def set_themes(self, themes: dict):
-        for name, styles in themes.items():
-            if not self.is_a_valid_style_name(name):
-                raise InvalidStyleNameError()
-
-            if name in styles:
-                raise RecursionInThemeError()
-
+        self.__verify_themes__(themes)
         self.themes = themes
         return self
 
@@ -181,6 +179,14 @@ class Color:
         return self.__colorize_text__(text)
 
     # Private methods
+    def __verify_themes__(self, themes: dict):
+        for name, styles in themes.items():
+            if not self.is_a_valid_style_name(name):
+                raise InvalidStyleNameError()
+
+            if name in styles:
+                raise RecursionInThemeError()
+
     def __strip_colors__(self, text: str):
         return re.sub(re.compile(self.ESC + '\d+m'), '', text)
 

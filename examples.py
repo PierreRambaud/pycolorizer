@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from pycolorizer import Color
+from pycolorizer import Color, InvalidStyleNameError
 
 c = Color()
 
@@ -17,8 +17,15 @@ c.set_themes(
     }
 )
 
+
 print(c('Hello world!').welcome().bold())
 print(c('Bye!').bye())
+
+c.add_theme('error', 'red')
+try:
+    c.add_theme('error&é"&é"&é', 'red')
+except InvalidStyleNameError as e:
+    print(c('InvalidStyleNameError {}'.format(e)).error())
 
 # Use style tags
 text = """

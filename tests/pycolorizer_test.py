@@ -8,8 +8,6 @@ from pycolorizer import (
 
 
 class ColorTest(unittest.TestCase):
-    color = None
-
     def setUp(self):
         self.color = Color()
 

@@ -18,7 +18,7 @@ class InvalidStyleNameError(BaseException):
 
 class RecursionInThemeError(BaseException):
     """
-    Recurison in user style
+    Recursion in user style
     """
     pass
 

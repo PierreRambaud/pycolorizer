@@ -14,7 +14,6 @@ setup(
     install_requires=[],
     tests_require=[
         'nose',
-        'pep8',
         'flake8'
     ],
 )
